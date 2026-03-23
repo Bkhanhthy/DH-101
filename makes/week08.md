@@ -24,6 +24,7 @@ In contrast, the network shows that many essential contributors are structurally
 The structure of the network also shapes how we understand power. By organizing the system as a linear flow from extraction to AI deployment, the visualization emphasizes efficiency and progression, but it may obscure feedback loops, dependencies, and inequalities. A different network structure—for example, one that centers labor or environmental impact—would tell a very different story. It could highlight vulnerability, exploitation, or ecological consequences rather than innovation and corporate power.
 
 Overall, this network demonstrates that visualization is not neutral. The choices of what to include, how to connect nodes, and how to position them all influence what becomes visible and what remains hidden in AI systems.
+
 ## Process Notes
 I created this network using Kumu to visualize the AI supply chain from raw material extraction to AI deployment. I first built a spreadsheet that listed connections between entities, using columns for source, target, relationship type, and weight. This helped me organize how materials, companies, and infrastructure are connected.
 
