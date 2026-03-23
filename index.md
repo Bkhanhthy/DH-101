@@ -40,13 +40,3 @@ This project showed me that network visualizations are not neutral but construct
 I observed that central actors like NVIDIA and data centers dominate the network, while labor and resource extraction remain peripheral. This reflects real-world power structures but also shows how visualization can reinforce them.
 
 The network also simplifies reality by excluding environmental and political factors. This made me more aware of how visualization can both reveal and obscure power.
-
-## Accessibility Statement
-This site was built by Thy Bui for DH 101.
-
-I have tried to make it accessible by:
-- Adding alt text to images  
-- Using clear headings and structure  
-- Ensuring readable color contrast  
-
-If you encounter any barriers, please contact me at bui_k1@denison.edu
