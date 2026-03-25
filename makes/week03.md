@@ -2,6 +2,7 @@
 
 ## The Artifact
 ![AI selfie](../assets/ai-selfie.png)
+
 Comments: The reason why I chose this prompt is that I want to see how AI defines
 “successful”, “knowledgeable”, and “wealthy ”. The picture above is really interesting to
 me because it shows a man who seems to be working in finance since he has a stock
