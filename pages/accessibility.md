@@ -6,7 +6,7 @@ I have tried to make it accessible by:
 
 - Adding descriptive alt text to all images so they can be understood by screen readers  
 - Using clear headings and structured sections for easier navigation  
-- Ensuring sufficient color contrast for readability using the WebAIM Contrast Checker  
+- Ensuring sufficient color contrast for readability using the WebAIM Contrast Checker. The ratio is 17.41:1
 - Writing descriptive link text instead of using vague phrases like “click here”  
 
 If you encounter any barriers, please contact me at bui_k1@denison.edu

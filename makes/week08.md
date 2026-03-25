@@ -41,10 +41,13 @@ I also noticed that my network simplifies a much more complex reality. For examp
 
 Overall, this process changed how I think about data and visualization. Instead of seeing networks as objective, I now understand them as selective representations that reflect certain perspectives. This project made me more aware of how design choices shape meaning and how visualization can both reveal and hide power.
 
-If you encounter any barriers, please contact me at [your email].
 
 ## Attribution & AI Use
 - Tools used:
+Kumu (network visualization), Visual Studio Code, GitHub Pages, ChatGPT
 - AI prompts (summary):
+I asked ChatGPT for help with structuring the network (nodes, edges, and categories), fixing technical issues in Kumu, and improving my written sections such as the analysis, artist statement, and reflection. I also used it to debug GitHub Pages setup and formatting in Markdown.
 - What AI generated:
+AI helped generate initial drafts of my network analysis, artist statement, process notes, and reflection. It also suggested improvements for clarity, organization, and wording. Additionally, it provided step-by-step guidance for building the network in Kumu and setting up the website.
 - What you changed or decided:
+I decided the final structure of the network, including which nodes and relationships to include and how to organize them visually. I edited and refined all written content to better reflect my own understanding and voice, especially in the reflection and analysis. I also made design decisions in Kumu, such as layout, clustering, and categorization, and ensured the final website met accessibility requirements.
