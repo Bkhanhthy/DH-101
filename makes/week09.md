@@ -2,8 +2,9 @@
 
 ## The Generator
 ![Text generator about weather](../assets/text-bot-generators.png)
+*Figure 1. I used Tracery grammar JSON and put in the text about absurd weather reports*
 
-I used Tracery grammar JSON and put in the text about an absurd weather reports
+
 
 ## The Curation Challenge
 I picked the best 7 outputs. Here are they: 
