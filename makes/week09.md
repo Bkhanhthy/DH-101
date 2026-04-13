@@ -2,8 +2,9 @@
 
 ## The Generator
 ![Text generator about weather](../assets/text-bot-generators.png)
+*Figure 1. I used Tracery grammar JSON and put in the text about absurd weather reports*
 
-I used Tracery grammar JSON and put in the text about an absurd weather reports
+
 
 ## The Curation Challenge
 I picked the best 7 outputs. Here are they: 
@@ -63,10 +64,6 @@ absurd weather reports written in a weirdly scientific register, where
 meteorological language collides with emotional and psychological 
 vocabulary.
 
-What tools did you use?
-- Tracery (tracery.io) — grammar-based text generator
-
-What decisions did you make?
 I wrote all 10+ grammar symbols myself, choosing which emotional 
 concepts to treat as measurable weather phenomena (ennui, regret, 
 cognitive dissonance, social warmth), which scientific phrases would 
@@ -76,7 +73,7 @@ outputs) and which 7 reports to curate from the full set.
 
 ## Reflection
 Creativity, I found, is not about volume. The generator could have 
-run forever — and that was the problem. Sitting there clicking 
+run forever - and that was the problem. Sitting there clicking 
 generate for the sixtieth time, watching the system produce another 
 report about crystallized indecision moving through the eastern 
 seaboard, the process stopped feeling exciting and started feeling 
@@ -102,8 +99,8 @@ good. That decision — recognizing value in something the system
 produced accidentally — is where the human in generative work lives.
 
 ## Attribution & AI Use
-- Tools used: Tracery (tracery.io)
-- AI prompts (summary): None
+- Tools used: Tracery (tracery.io), ChatGPT 
+- AI prompts (summary): I used ChatGPT to explain the terms and generate the word lists for me
 - What AI generated: The analysis. Besides that, all grammar rules, word lists, and curation decisions were made independently
 - What you changed or decided: Concept, grammar 
   symbols, word choices, curation criteria, and written reflections
