@@ -1,0 +1,214 @@
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--font-sans); }
+  .ig { max-width: 700px; margin: 0 auto; padding: 1.5rem 1rem 2rem; }
+
+  .header { border-top: 4px solid #185FA5; padding-top: 1rem; margin-bottom: 1.5rem; }
+  .header-label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #185FA5; font-weight: 500; margin-bottom: 6px; }
+  .header h1 { font-size: 28px; font-weight: 500; color: var(--color-text-primary); line-height: 1.2; margin-bottom: 6px; }
+  .header-sub { font-size: 14px; color: var(--color-text-secondary); line-height: 1.5; }
+
+  .section-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #185FA5; font-weight: 500; margin-bottom: 10px; }
+
+  .divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 1.5rem 0; }
+
+  .stat-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-bottom: 1.5rem; }
+  .stat-card { background: var(--color-background-secondary); border-radius: 8px; padding: 14px 12px; }
+  .stat-num { font-size: 26px; font-weight: 500; color: #185FA5; line-height: 1; margin-bottom: 4px; }
+  .stat-desc { font-size: 12px; color: var(--color-text-secondary); line-height: 1.4; }
+
+  .flow { display: flex; align-items: stretch; gap: 0; margin-bottom: 1.5rem; }
+  .flow-step { flex: 1; border: 0.5px solid var(--color-border-tertiary); padding: 12px 10px; background: var(--color-background-primary); position: relative; }
+  .flow-step:not(:last-child)::after { content: ''; position: absolute; right: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-left: 7px solid #185FA5; z-index: 2; }
+  .flow-step:not(:last-child) { border-right: 0.5px solid #185FA5; }
+  .flow-label { font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #185FA5; margin-bottom: 4px; font-weight: 500; }
+  .flow-text { font-size: 12px; color: var(--color-text-primary); line-height: 1.4; }
+  .flow-who { font-size: 11px; color: var(--color-text-secondary); margin-top: 5px; font-style: italic; }
+
+  .wage-block { margin-bottom: 1.5rem; }
+  .wage-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .wage-name { font-size: 12px; color: var(--color-text-secondary); min-width: 150px; }
+  .wage-bar-wrap { flex: 1; background: var(--color-background-secondary); border-radius: 3px; height: 22px; overflow: hidden; position: relative; }
+  .wage-bar { height: 100%; border-radius: 3px; display: flex; align-items: center; padding-left: 8px; }
+  .wage-bar-val { font-size: 11px; font-weight: 500; }
+
+  .quote-box { border-left: 3px solid #185FA5; padding: 10px 14px; background: var(--color-background-secondary); border-radius: 0 8px 8px 0; margin-bottom: 1.5rem; }
+  .quote-text { font-size: 14px; color: var(--color-text-primary); line-height: 1.6; margin-bottom: 6px; font-style: italic; }
+  .quote-attr { font-size: 11px; color: var(--color-text-secondary); }
+
+  .power-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 1.5rem; }
+  .power-card { border: 0.5px solid var(--color-border-tertiary); border-radius: 8px; padding: 12px; }
+  .power-card.blue { border-top: 3px solid #185FA5; }
+  .power-card.gray { border-top: 3px solid #888780; }
+  .power-title { font-size: 12px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 6px; }
+  .power-item { font-size: 12px; color: var(--color-text-secondary); line-height: 1.6; padding-left: 10px; position: relative; }
+  .power-item::before { content: '–'; position: absolute; left: 0; color: #185FA5; }
+
+  .callout { background: #185FA5; border-radius: 8px; padding: 14px 16px; margin-bottom: 1.5rem; }
+  .callout p { font-size: 13px; color: #E6F1FB; line-height: 1.6; }
+  .callout strong { color: #fff; font-weight: 500; }
+
+  .sources { border-top: 0.5px solid var(--color-border-tertiary); padding-top: 10px; }
+  .sources p { font-size: 11px; color: var(--color-text-secondary); line-height: 1.8; }
+
+  .tag { display: inline-block; font-size: 10px; background: #E6F1FB; color: #0C447C; border-radius: 4px; padding: 2px 7px; font-weight: 500; margin-bottom: 8px; }
+  @media (prefers-color-scheme: dark) {
+    .tag { background: #0C447C; color: #B5D4F4; }
+    .callout { background: #0C447C; }
+    .callout p { color: #B5D4F4; }
+    .callout strong { color: #E6F1FB; }
+    .flow-step:not(:last-child)::after { border-left-color: #378ADD; }
+  }
+</style>
+
+<div class="ig">
+  <h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Infographic: The hidden labor of AI — who does the invisible work of data labeling and who profits?</h2>
+
+  <div class="header">
+    <div class="header-label">Data Labeling &amp; AI Labor</div>
+    <h1>The hidden labor of AI</h1>
+    <p class="header-sub">Before an AI can speak, see, or reason — millions of humans must teach it. Their work is invisible. Their wages are not.</p>
+  </div>
+
+  <div class="section-label">What is data labeling?</div>
+  <div class="flow">
+    <div class="flow-step">
+      <div class="flow-label">Raw data</div>
+      <div class="flow-text">Millions of text snippets, images, audio clips scraped from the internet</div>
+      <div class="flow-who">Source: the open web</div>
+    </div>
+    <div class="flow-step">
+      <div class="flow-label">Human labeler</div>
+      <div class="flow-text">Workers read, tag, categorize, and rank every piece — including graphic content</div>
+      <div class="flow-who">Often: Kenya, India, Philippines</div>
+    </div>
+    <div class="flow-step">
+      <div class="flow-label">Labeled dataset</div>
+      <div class="flow-text">Clean, categorized data used to train and "align" AI models like ChatGPT</div>
+      <div class="flow-who">Result: AI learns what's "safe"</div>
+    </div>
+    <div class="flow-step">
+      <div class="flow-label">AI product</div>
+      <div class="flow-text">Polished chatbot sold to millions — the human labor made invisible</div>
+      <div class="flow-who">Profit: Silicon Valley</div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-label">The numbers</div>
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="stat-num">$1.32</div>
+      <div class="stat-desc">Minimum take-home hourly wage for Kenyan data labelers working for OpenAI via Sama (2021–22)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">$12.50</div>
+      <div class="stat-desc">What OpenAI paid Sama per hour — 6–9× what workers actually received</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">$19.7B</div>
+      <div class="stat-desc">Global data labeling market size in 2024 — projected to hit $134.7B by 2034</div>
+    </div>
+  </div>
+
+  <div class="section-label">Who earns what? (hourly wage comparison)</div>
+  <div class="wage-block">
+    <div class="wage-row">
+      <div class="wage-name">OpenAI (revenue per user)</div>
+      <div class="wage-bar-wrap">
+        <div class="wage-bar" style="width:100%; background:#185FA5;">
+          <span class="wage-bar-val" style="color:#E6F1FB;">~$300+/hr equivalent</span>
+        </div>
+      </div>
+    </div>
+    <div class="wage-row">
+      <div class="wage-name">Sama (billed to OpenAI)</div>
+      <div class="wage-bar-wrap">
+        <div class="wage-bar" style="width:28%; background:#378ADD;">
+          <span class="wage-bar-val" style="color:#042C53;">$12.50/hr</span>
+        </div>
+      </div>
+    </div>
+    <div class="wage-row">
+      <div class="wage-name">Nairobi receptionist (min wage)</div>
+      <div class="wage-bar-wrap">
+        <div class="wage-bar" style="width:10%; background:#85B7EB;">
+          <span class="wage-bar-val" style="color:#042C53;">$1.52/hr</span>
+        </div>
+      </div>
+    </div>
+    <div class="wage-row">
+      <div class="wage-name">Sama data labeler (take-home)</div>
+      <div class="wage-bar-wrap">
+        <div class="wage-bar" style="width:8%; background:#B5D4F4;">
+          <span class="wage-bar-val" style="color:#042C53;">$1.32–$2/hr</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-label">A worker's account</div>
+  <div class="quote-box">
+    <div class="quote-text">"That was torture. You will read a number of statements like that all through the week. By the time it gets to Friday, you are disturbed."</div>
+    <div class="quote-attr">— Sama worker in Nairobi, Kenya, speaking to TIME Magazine (Jan. 2023). Workers were exposed to graphic descriptions of violence, self-harm, and child abuse — with limited access to mental health support.</div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-label">Who holds the power?</div>
+  <div class="power-grid">
+    <div class="power-card blue">
+      <div class="power-title">AI companies (OpenAI, Google, Meta)</div>
+      <div class="power-item">Set contracts without transparency</div>
+      <div class="power-item">Do not disclose outsourcing partners</div>
+      <div class="power-item">Capture nearly all profits</div>
+      <div class="power-item">Distance themselves from labor conditions</div>
+    </div>
+    <div class="power-card gray">
+      <div class="power-title">Data labelers (Kenya, India, Philippines)</div>
+      <div class="power-item">Contract workers, not employees</div>
+      <div class="power-item">No job security or benefits</div>
+      <div class="power-item">Exposed to traumatic content</div>
+      <div class="power-item">Invisible in the AI "success story"</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <p><strong>Hicks's "cis-tem" applied:</strong> AI systems are built with assumptions about whose labor is invisible. The infrastructure of "clean" AI depends on workers in the Global South absorbing harm so platforms stay profitable. Making this labor visible is itself a political act.</p>
+  </div>
+
+  <div class="section-label">The "ghost work" phenomenon</div>
+  <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:10px; margin-bottom:1.5rem;">
+    <div style="border:0.5px solid var(--color-border-tertiary); border-radius:8px; padding:12px;">
+      <div style="font-size:13px; font-weight:500; color:var(--color-text-primary); margin-bottom:4px;">Platforms used</div>
+      <div style="font-size:12px; color:var(--color-text-secondary); line-height:1.6;">Amazon Mechanical Turk, Scale AI, Appen, Sama</div>
+    </div>
+    <div style="border:0.5px solid var(--color-border-tertiary); border-radius:8px; padding:12px;">
+      <div style="font-size:13px; font-weight:500; color:var(--color-text-primary); margin-bottom:4px;">Worker location</div>
+      <div style="font-size:12px; color:var(--color-text-secondary); line-height:1.6;">Primarily Global South: Kenya, India, Philippines, Venezuela</div>
+    </div>
+    <div style="border:0.5px solid var(--color-border-tertiary); border-radius:8px; padding:12px;">
+      <div style="font-size:13px; font-weight:500; color:var(--color-text-primary); margin-bottom:4px;">Worker status</div>
+      <div style="font-size:12px; color:var(--color-text-secondary); line-height:1.6;">Gig / contract — no benefits, no protections, no attribution</div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="sources">
+    <div class="section-label">Sources</div>
+    <p>
+      Perrigo, B. (Jan. 2023). "OpenAI Used Kenyan Workers on Less Than $2 Per Hour." <em>TIME Magazine.</em><br>
+      Grand View Research. (2024). <em>Data Collection and Labeling Market Size Report.</em><br>
+      Market.us. (2024). <em>Data Labeling Solution and Services Market.</em><br>
+      Gray, M. &amp; Suri, S. (2019). <em>Ghost Work.</em> Houghton Mifflin Harcourt.<br>
+      Hicks, M. (2017). "Hacking the Cis-tem." <em>IEEE Annals of the History of Computing.</em><br>
+      Partnership on AI, as cited in TIME (2023).<br>
+      <em>Tool: Claude (Anthropic). Images: none used. Design: original.</em>
+    </p>
+  </div>
+</div>
