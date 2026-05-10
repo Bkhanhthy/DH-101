@@ -11,63 +11,175 @@
     <a href="../index.html" class="site-logo">Katie Bui<span>.</span></a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">☰</button>
     <nav id="site-nav" class="site-nav" aria-label="Main navigation"><ul>
-      <li><a href="../index.html">Home</a></li><li><a href="../makes.html" class="active">Makes</a></li>
-      <li><a href="final-reflection.html">Final Reflection</a></li><li><a href="how-i-use-ai.html">How I Use AI</a></li>
-      <li><a href="accessibility.html">Accessibility</a></li><li><a href="sustainability.html">Sustainability</a></li>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../makes.html" class="active">Makes</a></li>
+      <li><a href="final-reflection.html">Final Reflection</a></li>
+      <li><a href="how-i-use-ai.html">How I Use AI</a></li>
+      <li><a href="accessibility.html">Accessibility</a></li>
+      <li><a href="sustainability.html">Sustainability</a></li>
     </ul></nav>
   </div></header>
 
   <main id="main">
     <div class="container" style="padding-top:2.5rem;">
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="../index.html">Home</a> <span>›</span> <a href="../makes.html">Makes</a> <span>›</span>
+        <a href="../index.html">Home</a> <span>›</span>
+        <a href="../makes.html">Makes</a> <span>›</span>
         <span aria-current="page">Make 6: Mapping AI Infrastructures</span>
       </nav>
+
       <div class="content-narrow">
         <p class="section-label">Make 6 · Week 7 · Digital Map</p>
         <h1 style="margin-bottom:0.5rem;">Mapping AI's Infrastructures</h1>
-        <p style="color:var(--ink-faint);font-family:var(--font-mono);font-size:0.8rem;margin-bottom:2rem;">Platform: Google My Maps · 17 locations · 3 layers · Week 7</p>
+        <p style="color:var(--ink-faint);font-family:var(--font-mono);font-size:0.8rem;margin-bottom:2rem;">
+          Companies: Google &amp; Microsoft · Platform: Google My Maps · 17 locations · 3 layers · Week 7
+        </p>
 
+        <!-- MAP EMBED -->
         <div class="make-artifact">
-          <!-- Embed your Google My Maps here. Replace the src with your actual embed URL. -->
-          <!-- To get the embed URL: open your map → Share → Embed on my site → copy the iframe src -->
           <iframe
-            src="https://www.google.com/maps/d/embed?mid=REPLACE_WITH_YOUR_MAP_ID"
-            title="Interactive map of AI global infrastructure — headquarters, data centers, and data labor locations for Google and Microsoft"
-            style="min-height:480px;"
+            src="https://www.google.com/maps/d/embed?mid=1WDJ3g38iQJGChzrjPZ1cUesoy4RGKGs"
+            title="Interactive map of AI global infrastructure showing headquarters, data centers, and data labor locations for Google and Microsoft across 17 locations worldwide"
+            style="min-height:480px; width:100%; border:none;"
             allowfullscreen
             loading="lazy">
           </iframe>
         </div>
         <p style="font-size:0.875rem;color:var(--ink-light);margin-bottom:2rem;">
-          ↑ Replace the embed URL above with your actual Google My Maps share link. Instructions: open your map → click Share → Embed → copy the iframe src URL.
+          🔵 Blue — Headquarters &nbsp;|&nbsp; 🟢 Green — Data Centers &nbsp;|&nbsp; 🔴 Red — Data Labor
+          &nbsp;·&nbsp;
+          <a href="https://www.google.com/maps/d/edit?mid=1WDJ3g38iQJGChzrjPZ1cUesoy4RGKGs&usp=sharing" target="_blank" rel="noopener">Open full map →</a>
         </p>
 
         <div class="reflection-block">
-          <h2>About the Map</h2>
-          <p>This map visualizes the global infrastructure behind AI systems developed by Google and Microsoft. It contains 17 locations across three layers to reveal how power, infrastructure, and labor are geographically distributed in AI development.</p>
+          <h2>The Map</h2>
+          <p>
+            This map visualizes the global infrastructure behind artificial intelligence systems
+            developed by Google and Microsoft. The map contains 17 locations across three layers
+            to reveal how power, infrastructure, and labor are geographically distributed in AI development.
+          </p>
+          <p>
+            The <strong>first layer (blue markers)</strong> represents corporate headquarters, including
+            Google in Mountain View and Microsoft in Redmond. Their concentration in Silicon Valley and
+            major U.S. technology hubs shows how decision-making power in AI remains geographically centralized.
+          </p>
+          <p>
+            The <strong>second layer (green markers)</strong> represents data centers — the physical
+            infrastructure that powers cloud computing and AI systems. These facilities are located in
+            Iowa, Oregon, Finland, and Belgium, chosen for cheap land, reliable electricity, renewable
+            energy sources, and government tax incentives. Data centers reveal the material and
+            environmental footprint behind technologies often described as "the cloud."
+          </p>
+          <p>
+            The <strong>third layer (red markers)</strong> represents data labeling and moderation labor,
+            including locations in Manila, Nairobi, Bangalore, Hyderabad, and Mexico City. Workers in
+            these regions label datasets, review harmful online content, and evaluate AI responses.
+            Their work is essential for training machine learning systems and making platforms safe,
+            yet it is often invisible in discussions about AI.
+          </p>
 
-          <p><strong>🔵 Blue — Headquarters</strong> (Mountain View, Redmond): Where major decisions about AI strategy, investment, and governance are made. Decision-making power in AI is geographically centralized in a handful of US technology hubs.</p>
-          <p><strong>🟢 Green — Data Centers</strong> (Iowa, Oregon, Finland, Belgium): The physical infrastructure required to power cloud computing and AI. These locations are chosen for cheap land, access to renewable energy, reliable electricity, and government tax incentives — revealing AI's environmental footprint.</p>
-          <p><strong>🔴 Red — Data Labor</strong> (Manila, Nairobi, Bangalore, Hyderabad, Mexico City): Workers who label images, review harmful content, and evaluate AI outputs. Their work is necessary to train machine learning systems, yet it is rarely visible to users.</p>
+          <h2 style="margin-top:1.75rem;">Research Documentation</h2>
+          <p>
+            To research the locations included in this map, I used a combination of academic sources,
+            investigative journalism, and company infrastructure documentation. A key source was Kate
+            Crawford's <em>Atlas of AI</em>, which examines the environmental and labor systems that
+            support artificial intelligence technologies. Crawford's work helped frame AI as a global
+            infrastructure rather than simply software or algorithms.
+          </p>
+          <p>
+            I also consulted reports from the AI Now Institute, which studies the social and political
+            impacts of AI systems. Their research helped explain how AI development depends on large
+            networks of human labor, particularly data labeling and content moderation. For information
+            about data center locations, I used company infrastructure pages from Google and Microsoft,
+            along with environmental reports such as Greenpeace's Click Clean project, which investigates
+            the energy use of cloud computing.
+          </p>
+          <p>
+            Investigative journalism from Rest of World, The Guardian, and Time Magazine was especially
+            helpful for identifying locations where AI training labor takes place. These sources describe
+            how workers in countries such as Kenya, India, and the Philippines perform tasks like labeling
+            images, reviewing harmful online content, and evaluating machine learning outputs.
+          </p>
 
-          <h2 style="margin-top:1.5rem;">Artist Statement</h2>
-          <p>This map argues that artificial intelligence is not simply a digital or virtual technology but a global system shaped by power, geography, and labor. A clear pattern emerges when the layers are viewed together: decision-making power is concentrated in a few US technology hubs, while infrastructure is distributed to regions with cheaper energy, and human labor is outsourced to workers in the Philippines, Kenya, and India.</p>
-          <p>This project connects to ideas from D'Ignazio and Klein's <em>Data Feminism</em> — specifically, the importance of making hidden systems of power visible through data visualization. Instead of mapping only innovation or corporate success, this map acts as a form of counter-mapping that highlights the infrastructures and labor that sustain AI technologies.</p>
+          <h2 style="margin-top:1.75rem;">Artist Statement</h2>
+          <p>
+            This map argues that artificial intelligence is not simply a digital or virtual technology
+            but a global system shaped by power, geography, and labor. By mapping headquarters, data
+            centers, and data labeling labor associated with Google and Microsoft, the visualization
+            reveals how the benefits and costs of AI are unevenly distributed across different regions.
+          </p>
+          <p>
+            A clear pattern emerges when these layers are viewed together. Decision-making power is
+            concentrated in a few technology hubs in the United States, where companies control the
+            development and governance of AI systems. Meanwhile, the infrastructure required to operate
+            AI is distributed across regions where electricity is cheaper, renewable energy is available,
+            or governments offer incentives. And the human labor that trains and moderates AI systems
+            is frequently outsourced to workers in the Philippines, Kenya, and India — whose work is
+            essential but often invisible in narratives that focus only on technological innovation.
+          </p>
+          <p>
+            This project connects to ideas from D'Ignazio and Klein's <em>Data Feminism</em>,
+            particularly the importance of making hidden systems of power visible through data
+            visualization. Instead of mapping only innovation or corporate success, this map acts
+            as a form of counter-mapping that highlights the infrastructures and labor that sustain
+            AI technologies.
+          </p>
 
-          <h2 style="margin-top:1.5rem;">Reflection</h2>
-          <p>What is hardest to see on the map is the full scale of the human labor involved in AI systems. Data labeling and moderation work are often outsourced through contractors, and companies rarely publish exact locations or workforce numbers. This makes it difficult to fully map the global workforce that supports AI technologies.</p>
-          <p>What surprised me most was how distributed the AI system actually is. While public narratives about AI often focus on Silicon Valley innovation, the infrastructure spans rural regions, global labor markets, and energy systems. Mapping these locations revealed how AI is supported by a complex global network that extends far beyond the technology companies themselves — and how unevenly the benefits and costs are distributed.</p>
+          <h2 style="margin-top:1.75rem;">Reflection</h2>
+          <p>
+            When looking at the map, the first thing that stands out is the geographic concentration
+            of corporate headquarters in the United States. While Google and Microsoft operate globally,
+            the centers of decision-making remain in a few powerful technology hubs. At the same time,
+            data centers appear more geographically dispersed, often located in places with cheaper
+            energy or favorable policies.
+          </p>
+          <p>
+            What is hardest to see on the map is the full scale of the human labor involved in AI
+            systems. Data labeling and moderation work are often outsourced through contractors, and
+            companies rarely publish exact locations or workforce numbers. This makes it difficult to
+            fully map the global workforce that supports AI technologies.
+          </p>
+          <p>
+            The map also raises several important questions. Who benefits economically from AI
+            development, and who bears the environmental and labor costs? Why are technology companies
+            transparent about data centers but less transparent about outsourced labor? And how might
+            the geography of AI change if governments begin regulating energy use, labor conditions,
+            or data governance more strictly? These questions suggest that AI is not only a technical
+            system but also a political and economic one shaped by global inequalities.
+          </p>
         </div>
 
+        <!-- ATTRIBUTION -->
         <div class="attribution-box">
           <h2>Attribution &amp; AI Use Log</h2>
           <dl>
-            <dt>Tools Used</dt><dd>Google My Maps, ChatGPT, AI Now Institute reports, Google &amp; Microsoft infrastructure documentation, investigative journalism (Rest of World, The Guardian, Time Magazine), Kate Crawford's <em>Atlas of AI</em></dd>
-            <dt>AI Prompts Used</dt><dd>"Identify Google and Microsoft headquarters, data center locations, and global data labeling labor hubs." / "Help structure a digital mapping assignment about AI infrastructure and explain the significance of each location."</dd>
-            <dt>Human Contributions</dt><dd>Selected all final map locations, verified information using external sources, edited all descriptions, made all design decisions about layers and visual hierarchy.</dd>
-            <dt>AI Contributions</dt><dd>ChatGPT generated an initial list of possible locations and assisted with drafting explanations and organizing written sections.</dd>
-            <dt>Verification</dt><dd>All location data cross-checked against primary sources (corporate reports, journalism) before inclusion.</dd>
+            <dt>Tools Used</dt>
+            <dd>Google My Maps, ChatGPT, AI Now Institute reports, Google &amp; Microsoft infrastructure
+            documentation, investigative journalism (Rest of World, The Guardian, Time Magazine),
+            Kate Crawford's <em>Atlas of AI</em></dd>
+
+            <dt>AI Prompts Used</dt>
+            <dd>
+              "Identify Google and Microsoft headquarters, data center locations, and global data labeling labor hubs." /
+              "Help structure a digital mapping assignment about AI infrastructure and explain the significance of each location." /
+              "Assist with drafting research documentation and reflections about the geography of AI power, labor, and infrastructure."
+            </dd>
+
+            <dt>What AI Generated</dt>
+            <dd>
+              ChatGPT helped generate an initial list of possible locations for headquarters, data centers,
+              and AI data labeling hubs. It also assisted with drafting explanations for each map location
+              and organizing written sections such as the research documentation and artist statement.
+            </dd>
+
+            <dt>What I Changed or Decided</dt>
+            <dd>
+              I selected the final locations included in the map, verified information using external
+              sources, and edited the descriptions to better match the assignment questions about power,
+              infrastructure, and labor. I also revised the written sections to reflect my own
+              interpretation of the research and to connect the map more clearly to concepts from
+              Data Feminism.
+            </dd>
           </dl>
         </div>
 
@@ -75,13 +187,23 @@
           <a href="make5-text-analysis.html">← Make 5: Text Analysis</a>
           <a href="make7-network.html">Make 7: Networks →</a>
         </nav>
+
       </div>
     </div>
   </main>
 
   <footer class="site-footer" aria-label="Site footer"><div class="container">
     <span>Katie Bui · DH 101 · Denison University · 2025</span>
-    <span><a href="https://github.com/Bkhanhthy/DH-101" target="_blank" rel="noopener">GitHub</a> · <a href="accessibility.html">Accessibility</a></span>
+    <span>
+      <a href="https://github.com/Bkhanhthy/DH-101" target="_blank" rel="noopener">GitHub</a>
+      · <a href="accessibility.html">Accessibility</a>
+    </span>
   </div></footer>
-  <script>const t=document.querySelector('.nav-toggle'),n=document.getElementById('site-nav');t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o);});</script>
-</body></html>
+
+  <script>
+    const t = document.querySelector('.nav-toggle');
+    const n = document.getElementById('site-nav');
+    t.addEventListener('click', () => { const o = n.classList.toggle('open'); t.setAttribute('aria-expanded', o); });
+  </script>
+</body>
+</html>

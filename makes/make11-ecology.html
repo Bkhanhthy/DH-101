@@ -33,14 +33,75 @@
         </div>
 
         <div class="reflection-block">
-          <h2>The Hidden Thirst: Research</h2>
-          <p>I researched one of the least visible environmental costs of AI: water. AI data centers require massive amounts of water to cool their servers. Unlike carbon emissions, water consumption is local - it is drawn from specific rivers, aquifers, and municipal supplies, putting it in direct competition with drinking water, agriculture, and ecosystems.</p>
+          <h2>Environmental visualizations</h2>
+          <p> For this project I created a full-color infographic map visualizing the water cost of AI data centers
+            across the United States. The infographic has four parts working together: a schematic US map
+            with every state shaded by water stress level (extreme, high, moderate, or lower); blue and red
+            dots marking major data center clusters and active community conflict sites; a horizontal bar
+            chart comparing annual water use by Google, Microsoft, Meta, and all US data centers
+            combined; and a 2028 projection chart showing how demand is expected to grow.
+            The map makes the abstract concrete by placing the data geographically. You can see, on the
+            same image, which states face extreme water stress and exactly where the largest data center
+            clusters sit on top of them. The Iowa callout makes the scale visceral: one Google data center in
+            Council Bluffs used 1 billion gallons of water in 2024 — enough to supply all of Iowa's residential
+            water for five days. The bar chart shows that Google alone used 8.1 billion gallons in 2024,
+            while all US data centers combined used 17 billion gallons just for direct cooling. The projection
+            bars show that figure could double or quadruple by 2028. The single most striking fact is printed
+            across the bottom of the infographic: two thirds of new data centers built since 2022 are located
+            in water-stressed regions
+          </p>
 
-          <blockquote>A single Google data center in Council Bluffs, Iowa consumed 1 billion gallons of water in 2024 - enough to supply all of Iowa's residential water for five days.
-          <cite>- Fast Company, citing Google Environmental Report 2024</cite></blockquote>
+          <h2 style="margin-top:1.5rem;">Research Documentation</h2>
+          <p>My research focused on water consumption by AI data centers - who uses it, how much, and
+            which communities bear the cost. I worked from three tiers of sources: primary corporate
+            sustainability reports, government and academic research, and investigative journalism.
+            For corporate data I used Google's 2024 Environmental Report, Microsoft's 2024 Sustainability
+            Report, and Meta's 2023 Sustainability Report. These gave me the headline numbers: 8.1 billion
+            gallons for Google, 2.75 billion for Microsoft, and 813 million for Meta. For broader industry
+            figures and projections I used the Lawrence Berkeley National Laboratory's 2024 Report on
+            U.S. Data Center Energy Use, which provided both the 17 billion gallon baseline and the 2028
+            doubling and quadrupling scenarios. For the Iowa conflict story I used reporting from Axios Des
+            Moines and Iowa Public Radio. For theoretical framing I drew on Kate Crawford's Atlas of AI,
+            which argues that AI is fundamentally an extractive industry whose costs fall on ecosystems and
+            marginalized communities while benefits concentrate elsewhere.</p>
 
-          <p>The most striking case study was West Des Moines, Iowa. In 2023, city officials told Microsoft it could not build a sixth data center until it committed to significantly reducing peak water usage. Microsoft eventually pledged zero-water cooling systems for all new facilities designed after August 2024 - but only after community and government pressure forced the issue. The technology was available; it required political will to deploy it.</p>
-          <p>The hardest data to find was consistent per-query water use. Numbers range from 0.32 ml (OpenAI's direct cooling figure) to 10-50 ml per prompt when indirect water is included. That is a 100-fold difference depending on what is counted. What surprised me most: inference - every ordinary query - contributes to this water cost continuously, not just during one-time model training. Twenty everyday prompts could equal half a liter of water.</p>
+            <p>The hardest data to find was consistent per-query water use. The numbers vary by a factor of
+              more than 100 depending on what is counted. OpenAI's official figure is 0.32 milliliters per query,
+              which covers only direct on-site cooling. Researchers at UC Riverside, in a 2023 paper titled
+              "Making AI Less Thirsty," estimated 10 to 50 milliliters per query once the water required to
+              generate the electricity powering the servers is included. That gap is not a research error — it
+              reflects genuine disagreement about scope, and real variation based on which data center
+              handles a request and how it is cooled. Users have no visibility into either. </p>
+
+            <p>The main uncertainties are: the wide per-query range; the fact that 2028 projections assume
+            current growth trajectories continue; and the gap in corporate disclosure, since most companies
+            publish global totals rather than facility-level data, making it impossible to know which specific
+            sites draw from water-stressed regions.</p>
+
+          <h2 style="margin-top:1.5rem;">Artist Statement</h2>
+          
+          <p>The environmental cost that concerns me most from this research is water — not carbon —
+            because water is local in a way that carbon is not. A ton of CO₂ dissolves into a shared global
+            atmosphere, diffusing the harm across the planet. A billion gallons of water is drawn from one
+            specific place: one aquifer, one river, one municipal supply, in competition with one community's
+            farmers and one city's residents. That specificity is what makes the Iowa story matter. The water
+            evaporated by a data center cooling tower is the same water a family down the road drinks. The
+            harm has an address.</p>
+          <p>What concerns me nearly as much is the invisibility. The word "cloud" is doing enormous work in
+            this situation. It suggests something weightless, clean, and everywhere at once — the opposite
+            of the physical reality, which is millions of gallons of fresh water pumped through server halls in
+            buildings that sit on specific land in specific drought-prone states. That metaphor is not
+            innocent. It makes it harder for communities to ask the right questions before a data center is
+            approved, and harder for the public to hold companies accountable after.</p>
+          <p>Can AI be sustainable? Possibly, but not without deliberate structural change. The technology
+            for zero-water cooling already exists — Microsoft adopted it in Iowa the moment expansion was
+            made conditional on doing so. The barrier is not engineering. It is incentive. As long as water is
+            cheap and largely invisible in corporate accounting, efficiency will remain optional.</p>
+          <p>My responsibility, as I understand it, is not primarily to use less AI. The numbers do not support
+            individual reduction as the main lever. My responsibility is to understand what the cloud actually
+            costs, to talk about it, and to support the kind of transparency that lets communities make
+            informed decisions about what gets built in their watershed.
+            </p>
 
           <h2 style="margin-top:1.5rem;">Personal Reflection</h2>
           <p>Before this project, I thought of AI tools as essentially weightless: software running on distant servers, invisible and free of physical resources. This project revealed that framing as a kind of designed ignorance. The "cloud" is not weightless. It is a network of physical machines in physical buildings drawing from physical water supplies in specific places, affecting specific communities.</p>

@@ -70,11 +70,7 @@
         <!-- CONCRETE EXAMPLES -->
         <section aria-labelledby="examples-heading" style="margin-top:3rem;">
           <h2 id="examples-heading">Concrete Examples of AI Output</h2>
-          <p>
-            The rubric requires at least two concrete examples of AI output I included 
-            or modified. Here are two from across the semester, with context.
-          </p>
-
+    
           <!-- EXAMPLE 1 -->
           <h3 style="margin-top:2rem; font-size:1.1rem;">Example 1: ChatGPT prompt draft for Make 6 (Map)</h3>
           <p>
@@ -86,32 +82,32 @@
             <div class="ex-label">AI Output — ChatGPT — [DATE]</div>
             <!--
               PASTE THE ACTUAL AI OUTPUT HERE.
-              Example format:
+              Example format: 
             -->
-            [PASTE THE ACTUAL TEXT CHATGPT GAVE YOU HERE]
-            <br><br>
-            <span class="human-edit">// MY EDIT: I kept the suggestion about data centers
-            but removed the suggestion about [X] because it was too vague / factually
-            incorrect / not what I was going for. I then independently verified the
-            data center locations using [source].</span>
+            ["Identify Google and Microsoft headquarters, data center
+            locations, and global data labeling labor hubs."
+            <span class="human-edit">// MY EDIT: I kept the headquarters and data center
+            suggestions but verified every location against Google and Microsoft's
+            own infrastructure pages before including them. I removed several
+            suggested locations that ChatGPT could not source reliably.</span>]
+      
           </div>
 
           <p>
-            <strong>What I changed:</strong> [Explain in 2–3 sentences what you kept, 
-            what you rejected, and why. This is the "verification" step the rubric requires.]
+            <strong>What I changed:</strong> I kept the core list of locations but verified each one using external sources — Google's infrastructure pages, Microsoft's sustainability reports, and journalism from Rest of World and The Guardian. I removed any location ChatGPT suggested that I could not independently confirm. The final map reflects my research, not the AI's first draft.
           </p>
 
           <!-- EXAMPLE 2 -->
           <h3 style="margin-top:2rem; font-size:1.1rem;">Example 2: DALL·E output for Make 2 (AI Selfie)</h3>
           <p>
-            My prompt to DALL·E was: <em>[PASTE YOUR ACTUAL PROMPT]</em>. 
+            My prompt to DALL·E was: <em>"A successful, wealthy, and knowledgeable person."</em> The model returned several images. Here is one I included and one I rejected: 
             The model returned several images. Here is one I included and one I rejected:
           </p>
 
           <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin:1.5rem 0;">
             <div>
               <div class="make-artifact" style="margin:0;">
-                <img src="../assets/make2-included.jpg"
+                <img src="../assets/ai-selfie.png"
                      alt="[Describe the image you included and why]"
                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                 />
@@ -121,12 +117,12 @@
                 </div>
               </div>
               <p style="font-size:0.8rem; color:var(--ink-light); margin-top:0.4rem;">
-                ✓ Included — [explain why]
+                ✓ Included — the image defaulted to a male corporate figure without me specifying gender or profession, revealing how AI encodes "success"
               </p>
             </div>
             <div>
               <div class="make-artifact" style="margin:0;">
-                <img src="../assets/make2-rejected.jpg"
+                <img src="../assets/ai-selfie-revise.png"
                      alt="[Describe the image you rejected and why]"
                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                 />
@@ -136,7 +132,7 @@
                 </div>
               </div>
               <p style="font-size:0.8rem; color:var(--ink-light); margin-top:0.4rem;">
-                ✗ Rejected — [explain why: bias, inaccuracy, off-topic, etc.]
+                ✗ Rejected — This was my revised prompt adding "friendly" — the only change was a smile, showing how narrowly AI interprets emotional qualities
               </p>
             </div>
           </div>
