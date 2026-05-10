@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Make 11: AI and Ecology — Katie Bui DH 101</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header"><div class="container">
+    <a href="../index.html" class="site-logo">Katie Bui<span>.</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">&#9776;</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation"><ul>
+      <li><a href="../index.html">Home</a></li><li><a href="../makes.html" class="active">Makes</a></li>
+      <li><a href="final-reflection.html">Final Reflection</a></li><li><a href="how-i-use-ai.html">How I Use AI</a></li>
+      <li><a href="accessibility.html">Accessibility</a></li><li><a href="sustainability.html">Sustainability</a></li>
+    </ul></nav>
+  </div></header>
+  <main id="main">
+    <div class="container" style="padding-top:2.5rem;">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> <span>&#8250;</span> <a href="../makes.html">Makes</a> <span>&#8250;</span>
+        <span aria-current="page">Make 11: AI and Ecology</span>
+      </nav>
+      <div class="content-narrow">
+        <p class="section-label">Make 11 &middot; Week 12 &middot; Infographic / Research</p>
+        <h1 style="margin-bottom:0.5rem;">AI's Hidden Thirst: Water and the Cloud</h1>
+        <p style="color:var(--ink-faint);font-family:var(--font-mono);font-size:0.8rem;margin-bottom:2rem;">Tools: Canva, ChatGPT &middot; Week 12</p>
+
+        <div class="make-artifact">
+          <img src="../assets/ai-water.png" alt="Infographic showing AI data center water usage statistics including Google's 8.1 billion gallons and Microsoft's 2.75 billion gallons annually, with a map showing data center locations and per-query water consumption estimates" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+          <div class="artifact-placeholder" style="display:none"><span class="big-icon">&#127807;</span><p>Image file: assets/ai-water.png</p></div>
+        </div>
+
+        <div class="reflection-block">
+          <h2>The Hidden Thirst: Research</h2>
+          <p>I researched one of the least visible environmental costs of AI: water. AI data centers require massive amounts of water to cool their servers. Unlike carbon emissions, water consumption is local - it is drawn from specific rivers, aquifers, and municipal supplies, putting it in direct competition with drinking water, agriculture, and ecosystems.</p>
+
+          <blockquote>A single Google data center in Council Bluffs, Iowa consumed 1 billion gallons of water in 2024 - enough to supply all of Iowa's residential water for five days.
+          <cite>- Fast Company, citing Google Environmental Report 2024</cite></blockquote>
+
+          <p>The most striking case study was West Des Moines, Iowa. In 2023, city officials told Microsoft it could not build a sixth data center until it committed to significantly reducing peak water usage. Microsoft eventually pledged zero-water cooling systems for all new facilities designed after August 2024 - but only after community and government pressure forced the issue. The technology was available; it required political will to deploy it.</p>
+          <p>The hardest data to find was consistent per-query water use. Numbers range from 0.32 ml (OpenAI's direct cooling figure) to 10-50 ml per prompt when indirect water is included. That is a 100-fold difference depending on what is counted. What surprised me most: inference - every ordinary query - contributes to this water cost continuously, not just during one-time model training. Twenty everyday prompts could equal half a liter of water.</p>
+
+          <h2 style="margin-top:1.5rem;">Personal Reflection</h2>
+          <p>Before this project, I thought of AI tools as essentially weightless: software running on distant servers, invisible and free of physical resources. This project revealed that framing as a kind of designed ignorance. The "cloud" is not weightless. It is a network of physical machines in physical buildings drawing from physical water supplies in specific places, affecting specific communities.</p>
+          <p>Using the UC Riverside research range of 10-50 ml per prompt as a guide, on a typical day I might send 15-30 prompts across various AI tools. That is 150 ml to 1.5 liters of water per day. Over a year, that is 55 to 540 liters from my use alone.</p>
+          <p>Kate Crawford's Atlas of AI argues that AI's environmental costs are not accidents - they are structural outcomes of an industry that externalizes its resource costs onto ecosystems and marginalized communities while concentrating profits in wealthy regions. The Iowa case is instructive: Microsoft adopted zero-water cooling only when expansion was made conditional on it. The change required informed local officials, a formal agreement, and community awareness. The honest answer to "who is responsible?" is: companies first, regulators second, and informed citizens as the mechanism of pressure on both.</p>
+        </div>
+
+        <div class="attribution-box">
+          <h2>Attribution &amp; AI Use Log</h2>
+          <dl>
+            <dt>Tools Used</dt><dd>Canva (infographic design), ChatGPT</dd>
+            <dt>Sources</dt><dd>Google Environmental Report 2024; Microsoft Sustainability Report 2024; Li et al. (2023) "Making AI Less Thirsty" (UC Riverside); Lawrence Berkeley National Laboratory 2024 report; Crawford, Atlas of AI (2021)</dd>
+            <dt>AI Contributions</dt><dd>Helped plan research approach, find and verify data, draft written sections, and build visualizations.</dd>
+            <dt>Human Contributions</dt><dd>Chose water as the focus; identified the key insight that every query (not just training) consumes water; chose to frame personal responsibility as civic action rather than individual reduction; all final design and editorial decisions.</dd>
+          </dl>
+        </div>
+
+        <nav class="make-nav" aria-label="Navigate between makes">
+          <a href="make10-labor.html">&#8592; Make 10: Labor</a>
+          <a href="make12-futures.html">Make 12: Futures &#8594;</a>
+        </nav>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer" aria-label="Site footer"><div class="container">
+    <span>Katie Bui &middot; DH 101 &middot; Denison University &middot; 2025</span>
+    <span><a href="https://github.com/Bkhanhthy/DH-101" target="_blank" rel="noopener">GitHub</a> &middot; <a href="accessibility.html">Accessibility</a></span>
+  </div></footer>
+  <script>const t=document.querySelector('.nav-toggle'),n=document.getElementById('site-nav');t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o);});</script>
+</body></html>

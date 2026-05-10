@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Make 9: The Interview — Katie Bui DH 101</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header"><div class="container">
+    <a href="../index.html" class="site-logo">Katie Bui<span>.</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">&#9776;</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation"><ul>
+      <li><a href="../index.html">Home</a></li><li><a href="../makes.html" class="active">Makes</a></li>
+      <li><a href="final-reflection.html">Final Reflection</a></li><li><a href="how-i-use-ai.html">How I Use AI</a></li>
+      <li><a href="accessibility.html">Accessibility</a></li><li><a href="sustainability.html">Sustainability</a></li>
+    </ul></nav>
+  </div></header>
+  <main id="main">
+    <div class="container" style="padding-top:2.5rem;">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> <span>&#8250;</span> <a href="../makes.html">Makes</a> <span>&#8250;</span>
+        <span aria-current="page">Make 9: The Interview</span>
+      </nav>
+      <div class="content-narrow">
+        <p class="section-label">Make 9 &middot; Week 10 &middot; Twine Interactive Game</p>
+        <h1 style="margin-bottom:0.5rem;">The Interview</h1>
+        <p style="color:var(--ink-faint);font-family:var(--font-mono);font-size:0.8rem;margin-bottom:2rem;">Tools: Twine (Harlowe), ChatGPT &middot; Week 10</p>
+
+        <div style="background:var(--ink);padding:2.5rem;border-radius:6px;text-align:center;margin-bottom:2rem;">
+          <p style="color:var(--cream);margin-bottom:1rem;font-family:var(--font-display);font-size:1.2rem;max-width:none;">Play the Game</p>
+          <a href="../makes/The-Interview.html" class="btn" style="background:var(--accent);">Launch The Interview &rarr;</a>
+          <p style="color:#9a9590;font-size:0.8rem;margin-top:1rem;margin-bottom:0;">A Twine interactive story &mdash; opens in this window</p>
+        </div>
+
+        <div class="reflection-block">
+          <h2>Design Statement</h2>
+          <p>The Interview is a game about the performance of selfhood inside an automated system. You play a job applicant being evaluated entirely by an AI: no human face, no small talk, no shared context. Just a screen, a timer, and a cursor that blinks whether you are ready or not.</p>
+          <p>The central question the game asks is simple: when a machine is watching, who do you become? Every choice is a version of that question. Do you answer honestly or strategically? Do you push back against the system or move through it? Do you name the manipulation when you see it?</p>
+          <p>The mechanic that supports this theme most directly is convergence. Both the honest path and the performance path lead to the same final question - because the system does not actually care which version of you showed up. It is collecting data either way. The rules of the game mirror the rules of the real system.</p>
+
+          <h2 style="margin-top:1.5rem;">Artist Statement</h2>
+          <p>Before this assignment, I thought of games as entertainment - something with winners, losers, points, and progress bars. What I did not think about was how games make arguments. The concept of procedural rhetoric changed how I see this: the rules of a game carry meaning, not just the story. A game where you cannot win without compromising yourself is saying something about compromise. That is what I tried to build.</p>
+          <p>Working with AI as a collaborator was strange in a way that felt appropriate given the subject matter. I used Claude to draft the passage text and structure, then read through everything and made decisions about what to keep, what to change, and what felt true. The line "your identification of the system does not place you outside it" came from the AI, and I kept it because it said something I believed but had not articulated. That moment of recognizing your own idea in someone else's words is genuinely strange.</p>
+          <p>What I needed to do myself was decide what the game was for. The AI could generate text, but it could not tell me which ending mattered more, or why the honest answer felt more important than the clever one. That was a human judgment. AI is very good at producing options, and humans are still responsible for choosing between them.</p>
+        </div>
+
+        <div class="attribution-box">
+          <h2>Attribution &amp; AI Use Log</h2>
+          <dl>
+            <dt>Tools Used</dt><dd>Twine (Harlowe format), ChatGPT / Claude</dd>
+            <dt>What I Asked AI To Do</dt><dd>Design the overall narrative structure and branching logic; draft all passage text based on my concept (The AI Interview); explain Twine syntax; help draft Design and Artist Statements.</dd>
+            <dt>What I Kept</dt><dd>Core branching structure; most passage prose (read and revised carefully); the line "your identification of the system does not place you outside it"; the AI pause times (1.3s, 2.1s, 4.7s).</dd>
+            <dt>What I Changed</dt><dd>Wording in several passages to sound more like my voice; made the final call on which ending mattered most emotionally.</dd>
+            <dt>Human Contributions</dt><dd>Chose the concept, decided what the game was arguing, made all final editorial decisions, selected which AI output to keep or discard.</dd>
+          </dl>
+        </div>
+
+        <nav class="make-nav" aria-label="Navigate between makes">
+          <a href="make8-bot.html">&#8592; Make 8: Bot</a>
+          <a href="make10-labor.html">Make 10: Labor &#8594;</a>
+        </nav>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer" aria-label="Site footer"><div class="container">
+    <span>Katie Bui &middot; DH 101 &middot; Denison University &middot; 2025</span>
+    <span><a href="https://github.com/Bkhanhthy/DH-101" target="_blank" rel="noopener">GitHub</a> &middot; <a href="accessibility.html">Accessibility</a></span>
+  </div></footer>
+  <script>const t=document.querySelector('.nav-toggle'),n=document.getElementById('site-nav');t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o);});</script>
+</body></html>

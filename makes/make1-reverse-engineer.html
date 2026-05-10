@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Make 1: Reverse-Engineer — Katie Bui DH 101</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="site-logo">Katie Bui<span>.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">☰</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../makes.html" class="active">Makes</a></li>
+          <li><a href="final-reflection.html">Final Reflection</a></li>
+          <li><a href="how-i-use-ai.html">How I Use AI</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container" style="padding-top:2.5rem;">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> <span>›</span>
+        <a href="../makes.html">Makes</a> <span>›</span>
+        <span aria-current="page">Make 1: Reverse-Engineer</span>
+      </nav>
+      <div class="content-narrow">
+        <p class="section-label">Make 1 · Week 1 · Analysis</p>
+        <h1 style="margin-bottom:0.5rem;">Reverse-Engineering DALL·E 3</h1>
+        <p style="color:var(--ink-faint);font-family:var(--font-mono);font-size:0.8rem;margin-bottom:2rem;">Tools: ChatGPT, web research · Week 1</p>
+
+        <div class="make-artifact">
+          <div class="artifact-placeholder">
+            <span class="big-icon">🔍</span>
+            <p>Analysis artifact — see written breakdown below</p>
+          </div>
+        </div>
+
+        <div class="reflection-block">
+          <h2>What Is Being Made?</h2>
+          <p>DALL·E 3 makes new images from text. You type what you want — "a rainy street in Tokyo, neon signs, film photo" — and it generates an image that tries to match the details in your prompt.</p>
+
+          <h2 style="margin-top:1.5rem;">What Is the Project Made From?</h2>
+          <p>At a high level, it's made from lots of image-text pairs and using data to make informed actions. The model learns how to translate image to language. It's looking for specific details and patterns, researching large amounts of data to make an imaginary photo from a description given by the user.</p>
+
+          <h2 style="margin-top:1.5rem;">Tools, Algorithms, or Systems</h2>
+          <p>The core system is DALL·E 3, OpenAI's text-to-image model. But it doesn't work alone — it's tightly integrated with ChatGPT, which acts like a middle layer between the user and the image generator. AI is used at multiple stages: to understand your prompt (ChatGPT rewrites or expands it behind the scenes), to generate the image, and to run safety filters (other AI systems scan prompts and images to block unsafe content).</p>
+          <p>The process is automated in turning text into images and improving prompts. However, humans are also included in the process — they still decide what to ask for and refine images through conversation.</p>
+
+          <h2 style="margin-top:1.5rem;">Human Labor & Decisions</h2>
+          <p>The training data was likely collected by large tech teams and data contractors, pulling from massive image-text sources across the internet, licensed datasets, and internal collections. Humans help to give content, control, and improvise the project.</p>
+
+          <h2 style="margin-top:1.5rem;">Design as Argument</h2>
+          <p>It's easy to see that DALL·E 3 creates beautiful, polished images with fast results and minimal effort. It makes AI look like a creative partner rather than a complex system. But it does not show where the training images came from, who did the labor behind the scenes, or why certain requests are blocked and others aren't. This makes the design hide power, labor, and data politics behind a clean and friendly interface.</p>
+        </div>
+
+        <div class="attribution-box">
+          <h2>Attribution &amp; AI Use Log</h2>
+          <dl>
+            <dt>Tools Used</dt>
+            <dd>ChatGPT, web research, DALL·E 3 as the subject of analysis</dd>
+            <dt>Human Contributions</dt>
+            <dd>All analysis, writing, and argument. Observations about how the system works and what it hides were made independently.</dd>
+            <dt>AI Contributions</dt>
+            <dd>ChatGPT used to help explain technical concepts (GANs, neural networks) at a high level.</dd>
+            <dt>Sources</dt>
+            <dd>OpenAI documentation; course readings including Ratto "Critical Making" (2011)</dd>
+          </dl>
+        </div>
+
+        <nav class="make-nav" aria-label="Navigate between makes">
+          <a href="../makes.html">← All Makes</a>
+          <a href="make2-selfie.html">Make 2: AI Selfie →</a>
+        </nav>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <span>Katie Bui · DH 101 · Denison University · 2025</span>
+      <span><a href="https://github.com/Bkhanhthy/DH-101" target="_blank" rel="noopener">GitHub</a> · <a href="accessibility.html">Accessibility</a></span>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('site-nav');
+    toggle.addEventListener('click', () => { const open = nav.classList.toggle('open'); toggle.setAttribute('aria-expanded', open); });
+  </script>
+</body>
+</html>

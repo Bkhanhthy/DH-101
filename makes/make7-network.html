@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Make 7: Networks of Knowledge & Power — Katie Bui DH 101</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header"><div class="container">
+    <a href="../index.html" class="site-logo">Katie Bui<span>.</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">☰</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation"><ul>
+      <li><a href="../index.html">Home</a></li><li><a href="../makes.html" class="active">Makes</a></li>
+      <li><a href="final-reflection.html">Final Reflection</a></li><li><a href="how-i-use-ai.html">How I Use AI</a></li>
+      <li><a href="accessibility.html">Accessibility</a></li><li><a href="sustainability.html">Sustainability</a></li>
+    </ul></nav>
+  </div></header>
+
+  <main id="main">
+    <div class="container" style="padding-top:2.5rem;">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> <span>›</span> <a href="../makes.html">Makes</a> <span>›</span>
+        <span aria-current="page">Make 7: Networks of Knowledge &amp; Power</span>
+      </nav>
+      <div class="content-narrow">
+        <p class="section-label">Make 7 · Week 8 · Network Visualization</p>
+        <h1 style="margin-bottom:0.5rem;">Networks of Knowledge &amp; Power: The AI Supply Chain</h1>
+        <p style="color:var(--ink-faint);font-family:var(--font-mono);font-size:0.8rem;margin-bottom:2rem;">Tool: Kumu · Week 8</p>
+
+        <div class="make-artifact">
+          <img src="../assets/AI Map.jpeg" alt="Network visualization of the AI supply chain showing nodes from mining and labor on the left, flowing through manufacturing (TSMC, Foxconn, CATL), to Big Tech companies (NVIDIA, Google, Microsoft, Apple, Tesla, Amazon) in the center, to data centers and energy infrastructure on the right" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+          <div class="artifact-placeholder" style="display:none"><span class="big-icon">🕸️</span><p>Image file: assets/AI Map.jpeg</p></div>
+        </div>
+
+        <p style="margin-bottom:1.5rem;">
+          <a href="https://embed.kumu.io/876a9150196a60570cb17fcced850534" target="_blank" rel="noopener" class="btn" style="font-size:0.85rem;">View Interactive Network on Kumu →</a>
+        </p>
+
+        <div class="reflection-block">
+          <h2>Network Analysis</h2>
+          <p>The most central node in this network is NVIDIA. It connects to multiple major technology companies — Google, Microsoft, Amazon, Tesla — and acts as a key supplier of AI chips. Its high number of connections and its position between different parts of the network suggest both strong degree centrality and betweenness, meaning it not only has many links but also bridges otherwise separate groups.</p>
+          <p>Several clusters emerged clearly. First, a resource extraction cluster on the left (cobalt and lithium mines, workers, traders). This flows into a manufacturing cluster (CATL, Panasonic, TSMC, Foxconn), which connects to a Big Tech cluster (NVIDIA, Apple, Tesla, Google, Microsoft, Amazon). Finally, an infrastructure and energy cluster centered on data centers and the electric grid. The structure forms a left-to-right supply chain: raw materials eventually becoming AI systems.</p>
+          <p>One surprising insight is how small and peripheral the labor and mining nodes appear, despite being essential to the entire system. In contrast, companies like NVIDIA and large data centers dominate visually — even though they depend entirely on earlier stages of the supply chain. The network unintentionally mirrors how power is discussed in public: the visible actors at the center look most important.</p>
+
+          <h2 style="margin-top:1.5rem;">Reflection: Who is visible and invisible in AI networks?</h2>
+          <p>This project helped me realize that network visualizations are not neutral representations of reality — they are constructed interpretations. While building the network, I had to decide what to include, how to define relationships, and how to position different nodes. These choices directly influenced what appears important and what becomes less visible.</p>
+          <p>The labor and resource extraction nodes are placed at the edges and appear smaller, even though they are essential to the entire system. This made me realize how visualization can unintentionally reproduce existing power structures by emphasizing already visible actors. A different network — one that centered labor or environmental impact — would tell a very different story about AI.</p>
+          <p>Overall, this process changed how I think about data. Instead of seeing networks as objective, I now understand them as selective representations that reflect certain perspectives. Design choices shape meaning. Visualization can both reveal and hide power.</p>
+        </div>
+
+        <div class="attribution-box">
+          <h2>Attribution &amp; AI Use Log</h2>
+          <dl>
+            <dt>Tools Used</dt><dd>Kumu (network visualization), Visual Studio Code, GitHub Pages, ChatGPT</dd>
+            <dt>AI Prompts Used</dt><dd>Asked ChatGPT for help structuring the network (nodes, edges, categories), fixing technical issues in Kumu, and improving written sections. Also used to debug GitHub Pages setup.</dd>
+            <dt>Human Contributions</dt><dd>Decided the final structure of the network including which nodes and relationships to include. Edited and refined all written content. Made all design decisions in Kumu: layout, clustering, categorization, node sizing by degree centrality.</dd>
+            <dt>AI Contributions</dt><dd>Helped generate initial drafts of analysis, artist statement, and reflection. Suggested improvements for clarity. Provided guidance for building the network in Kumu.</dd>
+          </dl>
+        </div>
+
+        <nav class="make-nav" aria-label="Navigate between makes">
+          <a href="make6-map.html">← Make 6: Map</a>
+          <a href="make8-bot.html">Make 8: Bot →</a>
+        </nav>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" aria-label="Site footer"><div class="container">
+    <span>Katie Bui · DH 101 · Denison University · 2025</span>
+    <span><a href="https://github.com/Bkhanhthy/DH-101" target="_blank" rel="noopener">GitHub</a> · <a href="accessibility.html">Accessibility</a></span>
+  </div></footer>
+  <script>const t=document.querySelector('.nav-toggle'),n=document.getElementById('site-nav');t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o);});</script>
+</body></html>
