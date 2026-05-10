@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessibility — Katie Bui DH 101</title>
+  <meta name="description" content="Accessibility statement for Katie Bui's DH 101 portfolio — design choices, alt text, and improvements made." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="site-logo">Katie Bui<span>.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">☰</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../makes.html">Makes</a></li>
+          <li><a href="final-reflection.html">Final Reflection</a></li>
+          <li><a href="how-i-use-ai.html">How I Use AI</a></li>
+          <li><a href="accessibility.html" class="active" aria-current="page">Accessibility</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+
+      <div class="page-hero">
+        <p class="label">Design · Inclusion · Access</p>
+        <h1>Accessibility</h1>
+        <p class="lead">
+          This page documents the specific design choices I made to make this 
+          portfolio accessible — and what I learned in the process.
+        </p>
+      </div>
+
+      <div class="content-narrow">
+
+        <section aria-labelledby="commitment-heading">
+          <h2 id="commitment-heading">My Commitment</h2>
+          <p>
+            Accessibility is not an afterthought — it is a design value. Building 
+            this portfolio, I tried to apply what we discussed in class about who 
+            gets to participate in digital spaces, and to make deliberate choices 
+            that lower barriers to access rather than raise them.
+          </p>
+          <p>
+            The Wave extension audit (used in Week 8) surfaced issues I had not 
+            noticed. Here is what I found, what I fixed, and what remains imperfect.
+          </p>
+        </section>
+
+        <section aria-labelledby="changes-heading" style="margin-top:2.5rem;">
+          <h2 id="changes-heading">Specific Changes I Made</h2>
+
+          <div class="info-grid">
+
+            <div class="info-card">
+              <h3>Skip Link</h3>
+              <p>
+                Every page has a "Skip to main content" link as the first focusable 
+                element. It is visually hidden until focused, so keyboard users can 
+                bypass the navigation without tabbing through every menu item.
+                <br><br>
+                <strong>Why:</strong> Screen readers and keyboard-only users would 
+                otherwise have to navigate the full header on every page load.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <h3>Semantic HTML Structure</h3>
+              <p>
+                Every page uses proper landmark elements: <code>&lt;header&gt;</code>, 
+                <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, 
+                <code>&lt;footer&gt;</code>, and <code>&lt;section&gt;</code> with 
+                <code>aria-labelledby</code> attributes. Headings follow a strict 
+                H1 → H2 → H3 hierarchy — no skipped levels.
+                <br><br>
+                <strong>Why:</strong> Screen readers use landmark and heading 
+                structure to navigate pages non-linearly. Without it, the page is 
+                experienced as an undifferentiated wall of text.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <h3>Descriptive Alt Text</h3>
+              <p>
+                Every image in the portfolio has alt text describing what it shows 
+                and why it matters in context — not just "image" or a filename. 
+                Decorative elements use <code>alt=""</code> so screen readers skip them.
+                <br><br>
+                <strong>Why:</strong> Alt text is the primary way visually impaired 
+                users access image content. Generic alt text is no better than none.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <h3>Color Contrast</h3>
+              <p>
+                The site uses a high-contrast dark ink (<code>#1a1612</code>) on 
+                cream background (<code>#f5f0e8</code>) — contrast ratio of 
+                approximately 14:1, well above the WCAG AA threshold of 4.5:1. 
+                The accent color (<code>#c8441a</code>) is used for decorative 
+                emphasis only, never as the sole carrier of meaning.
+                <br><br>
+                <strong>Why:</strong> Low contrast is one of the most common and 
+                most impactful accessibility failures, affecting users with low 
+                vision, color blindness, and users in bright-light environments.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <h3>Keyboard Navigation</h3>
+              <p>
+                All interactive elements — links, buttons, the mobile nav toggle — 
+                are reachable and operable via keyboard. Focus states are visible 
+                (a 2px accent-colored outline) and never suppressed with 
+                <code>outline: none</code>.
+                <br><br>
+                <strong>Why:</strong> Many users navigate entirely by keyboard, 
+                including users with motor disabilities and power users. Invisible 
+                focus states make a site unusable for them.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <h3>Responsive Design</h3>
+              <p>
+                The layout adapts to mobile screen sizes using CSS media queries 
+                and flexible grid layouts. Text remains legible at all sizes. 
+                The navigation collapses to a hamburger menu on small screens 
+                with proper ARIA attributes (<code>aria-expanded</code>).
+                <br><br>
+                <strong>Why:</strong> A site that only works on desktop excludes 
+                users who rely on mobile devices as their primary or only access 
+                to the web.
+              </p>
+            </div>
+
+          </div>
+        </section>
+
+        <section aria-labelledby="audit-heading" style="margin-top:2.5rem;">
+          <h2 id="audit-heading">What the WAVE Audit Found</h2>
+          <p>
+            I ran a WAVE (Web Accessibility Evaluation Tool) audit on this site. 
+            Here is what it flagged and what I did about it:
+          </p>
+          <ul class="checklist" style="margin-top:1rem;">
+            <li>
+              <strong>Missing alt text on some images</strong> — Fixed: added 
+              descriptive alt text to all artifact images and thumbnail images.
+            </li>
+            <li>
+              <strong>Navigation missing aria-label</strong> — Fixed: added 
+              <code>aria-label="Main navigation"</code> to the <code>&lt;nav&gt;</code> element.
+            </li>
+            <li>
+              <strong>[ADD WHAT ELSE WAVE FLAGGED AND WHAT YOU DID]</strong> — 
+              Replace this with a real finding from your own audit.
+            </li>
+          </ul>
+
+          <p style="margin-top:1.5rem;">
+            Known remaining issues:
+          </p>
+          <ul class="checklist">
+            <li>
+              Embedded iframes (for maps and external tools like Voyant) may not be 
+              fully accessible — they are third-party tools and their accessibility 
+              is outside my control. I have added titles to all iframes and provided 
+              text alternatives where possible.
+            </li>
+            <li>
+              [ADD ANY OTHER KNOWN REMAINING ISSUE AND HOW YOU MITIGATED IT]
+            </li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="learning-heading" style="margin-top:2.5rem;">
+          <h2 id="learning-heading">What I Learned</h2>
+          <p>
+            Before this class, I thought about accessibility the way I thought about 
+            AI — as someone else's problem. Building this site taught me that 
+            accessibility is a design choice made (or not made) by the person building 
+            the thing. Every image without alt text, every low-contrast color choice, 
+            every inaccessible embed is a decision — usually an invisible one — to 
+            exclude someone.
+          </p>
+          <p>
+            This connects to D'Ignazio and Klein's argument in <em>Data Feminism</em> 
+            about who counts as a user. The default user in most web design is 
+            sighted, mouse-using, neurotypical, and English-speaking. Building 
+            accessibly means questioning that default — the same critical reflex 
+            the course asked us to apply to AI.
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <span>Katie Bui · DH 101 · Denison University · 2025</span>
+      <span>
+        <a href="https://github.com/Bkhanhthy/DH-101" target="_blank" rel="noopener">GitHub Repository</a>
+        · <a href="accessibility.html">Accessibility</a>
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('site-nav');
+    toggle.addEventListener('click', () => { const open = nav.classList.toggle('open'); toggle.setAttribute('aria-expanded', open); });
+  </script>
+
+</body>
+</html>

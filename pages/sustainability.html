@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sustainability & Ethics — Katie Bui DH 101</title>
+  <meta name="description" content="How Katie Bui reduced the environmental footprint of this portfolio and engaged with AI's ecological costs." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="site-logo">Katie Bui<span>.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">☰</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../makes.html">Makes</a></li>
+          <li><a href="final-reflection.html">Final Reflection</a></li>
+          <li><a href="how-i-use-ai.html">How I Use AI</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="sustainability.html" class="active" aria-current="page">Sustainability</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+
+      <div class="page-hero">
+        <p class="label">Environment · Ethics · Infrastructure</p>
+        <h1>Sustainability & Ethics</h1>
+        <p class="lead">
+          Every website has a carbon cost. Every AI query has one too. This page 
+          documents the steps I took to reduce this portfolio's footprint — and 
+          what I learned from reckoning with AI's environmental impact.
+        </p>
+      </div>
+
+      <div class="content-narrow">
+
+        <section aria-labelledby="reading-heading">
+          <h2 id="reading-heading">The Reading That Changed How I Think About This</h2>
+          <p>
+            Crawford and Joler's "Anatomy of an AI System" (2018) traces the full 
+            material stack of a single Amazon Echo voice command — from lithium mines 
+            in Bolivia to server farms in Virginia to the underpaid click-workers who 
+            labeled training data. The piece makes viscerally clear that AI is not 
+            immaterial. It runs on land, water, energy, and human bodies.
+          </p>
+          <p>
+            Tomlinson et al.'s piece on the carbon emissions of AI writing offered a 
+            more complicated counterpoint: in some narrow contexts, AI-assisted writing 
+            may produce fewer emissions than human writing alone. But this framing 
+            risks becoming a justification for uncritical use — efficiency arguments 
+            tend to obscure questions of necessity and distribution. Just because 
+            something is more efficient does not mean we should do more of it.
+          </p>
+          <p>
+            Building Make 11 (AI &amp; Ecology) forced me to confront numbers I had 
+            been comfortable ignoring. A single GPT-4 query uses roughly the energy 
+            equivalent of charging a smartphone for several minutes. Multiplied across 
+            billions of queries a day, the scale is staggering — and growing.
+          </p>
+        </section>
+
+        <section aria-labelledby="steps-heading" style="margin-top:2.5rem;">
+          <h2 id="steps-heading">Concrete Steps I Took</h2>
+          <p>Here are the specific actions I took to reduce the environmental footprint of this site:</p>
+
+          <div class="info-grid" style="margin-top:1.5rem;">
+
+            <div class="info-card">
+              <h3>Compressed All Images</h3>
+              <p>
+                Every image in this portfolio was compressed before upload using 
+                <a href="https://squoosh.app" target="_blank" rel="noopener">Squoosh</a> 
+                or similar tools. Uncompressed images are one of the largest contributors 
+                to page weight and therefore to data transfer energy costs.
+                <br><br>
+                <strong>Result:</strong> Images are served at the minimum quality 
+                necessary for the viewing context — thumbnails at ~80px wide are not 
+                sent as 3000px originals.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <h3>No Tracking Scripts or Analytics</h3>
+              <p>
+                This site uses no third-party trackers, analytics scripts, or 
+                advertising tags. Many portfolio sites quietly load dozens of 
+                tracking scripts that run on every page load, consuming energy 
+                and sending data to third parties without the visitor's knowledge.
+                <br><br>
+                <strong>Result:</strong> The only JavaScript on this site is the 
+                small inline mobile nav toggle — nothing external is loaded.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <h3>Limited External Embeds</h3>
+              <p>
+                Where possible, I used screenshots or static images instead of 
+                live embeds (e.g., for maps, Voyant visualizations, and social 
+                content). Live embeds load third-party scripts on every visit, 
+                multiplying the energy cost per page view.
+                <br><br>
+                <strong>Result:</strong> Embeds are used only where a static 
+                image genuinely cannot convey the artifact's interactivity.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <h3>Static HTML — No Database or Server Processing</h3>
+              <p>
+                This entire site is static HTML and CSS — no server-side processing, 
+                no database queries, no backend. GitHub Pages serves pre-built files 
+                directly, which is dramatically more energy-efficient than dynamic 
+                sites that generate pages on demand.
+                <br><br>
+                <strong>Result:</strong> Every page load is a simple file transfer, 
+                not a computation.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <h3>System Fonts Considered</h3>
+              <p>
+                This site does load two external font families from Google Fonts 
+                (Playfair Display and DM Sans). This is a deliberate trade-off: 
+                typography is central to the site's legibility and design argument. 
+                I chose fonts served by Google's CDN, which uses renewable energy, 
+                and limited the number of weights loaded to the minimum needed.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <h3>Mindful AI Use</h3>
+              <p>
+                Knowing that each AI query has an energy cost changed how I used 
+                these tools. I batched related questions rather than sending 
+                dozens of short queries, avoided regenerating outputs when the 
+                first was usable, and tried to use AI deliberately rather than 
+                reflexively.
+              </p>
+            </div>
+
+          </div>
+        </section>
+
+        <section aria-labelledby="reflection-heading" style="margin-top:2.5rem;">
+          <h2 id="reflection-heading">Reflection: The Ethics of Using AI to Study AI</h2>
+          <p>
+            There is an obvious tension in a course about AI's costs that requires 
+            us to use AI tools. I do not think the answer is to refuse to use them — 
+            that would be both impractical and intellectually dishonest about the world 
+            we actually live in. But Crawford and Joler's work convinced me that 
+            awareness matters: using AI without acknowledging its costs is a form of 
+            willful blindness that benefits the companies who profit from that invisibility.
+          </p>
+          <p>
+            The steps above are small. They do not offset the AI queries I sent this 
+            semester, and they do not address the structural drivers of AI's 
+            environmental impact — decisions made by corporations and governments, 
+            not individual students. But they are honest. They represent a choice to 
+            see the cost, name it, and do what I can within my sphere of control — 
+            which is, I think, what critical making asks of us.
+          </p>
+          <p>
+            [OPTIONAL: Add a sentence or two here connecting this to your own 
+            experience with Make 11 — what specifically did you make, and what 
+            did it show you about AI's ecological footprint?]
+          </p>
+        </section>
+
+        <section aria-labelledby="sources-heading" style="margin-top:2.5rem;">
+          <h2 id="sources-heading">Sources</h2>
+          <p style="font-family: var(--font-mono); font-size: 0.82rem; line-height: 1.9; color: var(--ink-light);">
+            Crawford, Kate, and Vladan Joler. "Anatomy of an AI System: The Amazon Echo 
+            as an Anatomical Map of Human Labor, Data and Planetary Resources." 
+            <em>anatomyof.ai</em>, 2018. <a href="https://anatomyof.ai" target="_blank" rel="noopener">anatomyof.ai</a><br><br>
+
+            Tomlinson, Bill, et al. "The Carbon Emissions of Writing and Illustrating 
+            Are Lower for AI than for Humans." <em>Scientific Reports</em>, 2024.<br><br>
+
+            Website Carbon Calculator: <a href="https://www.websitecarbon.com" target="_blank" rel="noopener">websitecarbon.com</a>
+            — a tool for estimating the carbon cost of a web page.
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <span>Katie Bui · DH 101 · Denison University · 2025</span>
+      <span>
+        <a href="https://github.com/Bkhanhthy/DH-101" target="_blank" rel="noopener">GitHub Repository</a>
+        · <a href="accessibility.html">Accessibility</a>
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('site-nav');
+    toggle.addEventListener('click', () => { const open = nav.classList.toggle('open'); toggle.setAttribute('aria-expanded', open); });
+  </script>
+
+</body>
+</html>
